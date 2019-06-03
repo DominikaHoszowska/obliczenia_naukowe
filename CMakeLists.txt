@@ -5,7 +5,7 @@ find_package(LAPACK REQUIRED)
 find_package(BLAS REQUIRED)
 include_directories(${BLAS_INCLUDE_DIR})
 
-add_executable(obliczenia_naukowe main.cpp nellspsv.cpp)
+add_executable(obliczenia_naukowe main.cpp nellspsv.h)
 
 set(LAPACK_LIBRARIES /usr/lib/x86_64-linux-gnu/liblapacke.so ${LAPACK_LIBRARIES})
 
